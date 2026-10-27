@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topo">
+        <img src="C:\Users\aluno\Downloads\RC PROD\assets\logo.png" alt="logo" height="100">
+        <h1>Cadastro</h1>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">&larr; Voltar para a Home</a></li>
+        </ul>
+    </nav>
+
+    <main class="pagina-form">
+        <section class="cartao">
+        <p>Entre na sua conta para comprar com a gente.</p>
+        <form onsubmit="alert('Login realizado com sucesso!'); window.location.href = '../index.html'; return false;">
+        <label for="name">Nome</label>
+        <input type="name" id="name" placeholder="Nome completo" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+
+        <label for="Senha">Senha</label>
+        <input type="text" id="Senha" placeholder="Crie uma Senha" maxlength="10">
+
+        <label for="Confirmar Senha"> Confirma Senha </label>
+        <input type="text" id="Confirmar Senha" placeholder="Confirme sua Senha" maxlength="10">
+
+        <label for="Numero"> RG </label>
+        <input type="text" id="RG" placeholder="00.000.000-0" maxlength="9" minlength="9">
+
+        <label for="Numero"> CPF </label>
+        <input type="text" id="CPF" placeholder="000.000.000-00" maxlength="11" minlength="11">
+
+        <label for="Endereço rua">Rua</label>
+        <input type="text" id="Rua" placeholder="Rua da residencia" maxlength="40" minlength="10">
+        
+        <label for="Endereço Bairro">Bairro</label>
+        <input type="text" id="Bairro" placeholder="Bairro da residencia" maxlength="40" minlength="10">
+        
+        <label for="CEP">CEP</label>
+        <input type="text" id="CEP" placeholder="Seu CEP" maxlength="8" minlength="8">
+       
+        <label for="Cidade">Cidade</label>
+        <input type="text" id="Cidade" placeholder="Sua Cidade" maxlength="20" minlength="0">
+        
+        <label for="Estado">UF</label>
+        <input type="text" id="UF" placeholder="Seu Estado (UF)" maxlength="2" minlength="2">
+
+        <label for="Pais">País</label>
+        <input type="text" id="Pais" placeholder="Seu Pais" maxlength="15" minlength="15">
+
+        <label for="Data">Data de Nacimento</label>
+        <input type="date" id="Data Nacimento" placeholder="Data de Nacimento">
+
+        <section>
+            <button type="submit" class="botao">Casdastrar</button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>2026. Todos os direitos reservados.</p>
+        <p>Projeto desenvolvido no curso de Front-End do SENAI Zerbini.</p>
+    </footer>
+</body>
+
+
+</html>
