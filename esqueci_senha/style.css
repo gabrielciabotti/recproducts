@@ -1,0 +1,18 @@
+.lateral_figura img {
+    width: 140px;
+}
+
+@media (min-width: 1100px) {
+    aside {
+        flex: 1;
+        align-self: stretch;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lateral_figura img {
+        width: 200px;
+    }
+}

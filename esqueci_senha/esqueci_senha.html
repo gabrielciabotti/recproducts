@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R&amp;C Products | Recuperar senha</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <p class="topo_texto">Produtos de limpeza</p>
+
+        <a href="../index.html" class="logo">
+            <img src="../assets/logo_icone.png" alt="Logo da R&amp;C Products">
+        </a>
+
+        <p class="topo_texto topo_texto_direita">Para casa e empresa</p>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="../login/login.html">&larr; Voltar para o Login</a></li>
+        </ul>
+    </nav>
+
+    <aside class="lateral">
+        <figure class="lateral_figura">
+            <img src="../assets/cadeado.png" alt="Ilustração de um cadeado">
+            <figcaption>Recupere o acesso à sua conta em poucos passos.</figcaption>
+        </figure>
+    </aside>
+
+    <main class="principal">
+
+        <section class="cartao">
+            <p class="etiqueta">Recuperar senha</p>
+            <h1>Esqueceu a senha?</h1>
+
+            <p class="subtitulo">
+                Sem problema! Digite o e-mail que você usou no cadastro
+                e vamos enviar um link para você criar uma senha nova.
+            </p>
+
+            <form>
+                <label for="email" class="campo">
+                    E-mail cadastrado
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </label>
+
+                <button type="submit" class="botao"
+                    onclick="if (this.form.checkValidity()) { alert('Pronto! Enviamos o link para o seu e-mail.'); window.location.href = '../login/login.html'; return false; }">
+                    Enviar link
+                </button>
+            </form>
+
+            <ul class="links_apoio">
+                <li><a href="../login/login.html">Lembrei a senha, quero entrar</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p><strong>R&amp;C Products</strong> &copy; 2026. Todos os direitos reservados.</p>
+        <p>Projeto desenvolvido no curso de Front-End do SENAI Zerbini.</p>
+    </footer>
+
+</body>
+
+</html>
